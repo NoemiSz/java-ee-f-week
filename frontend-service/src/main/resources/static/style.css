@@ -45,7 +45,7 @@ header nav a:hover {
 }
 
 .main-image {
-    background: url("angel.png");
+    background: #b86b77;
     background-size: cover;
     color: white;
     text-align: center;
@@ -89,7 +89,7 @@ header nav a:hover {
     padding: 20px;
     color: #555555;
     text-align: center;
-    margin-top: 30px;
+    margin: 65px 0;
 }
 
 .box h2 {
@@ -131,15 +131,16 @@ header nav a:hover {
 }
 
 footer {
-    background: green;
+    background: #f4c2c2;
     color: white;
 }
 
 footer p {
     width: 100%;
-    margin: 0;
+    margin: 20px 0;
     text-align: center;
     font-size: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 footer .padrowthree {
