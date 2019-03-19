@@ -1,5 +1,6 @@
 package com.codecool.questionservice.controller;
 
+import com.codecool.questionservice.Entity.Question;
 import com.codecool.questionservice.service.QuestionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ public class QuestionController {
     private Environment env;
 
     @GetMapping("/question")
-    public String oneQuestion(){
+    public Question oneQuestion(){
         return questionService.getQuestion();
     }
 
