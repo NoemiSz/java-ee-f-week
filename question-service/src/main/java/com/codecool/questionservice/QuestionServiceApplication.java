@@ -20,6 +20,7 @@ public class QuestionServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(QuestionServiceApplication.class, args);
+
     }
 
     @Bean
@@ -28,7 +29,7 @@ public class QuestionServiceApplication {
 
 
         return args -> {
-            List<String> questionlist = new ArrayList<String>(Arrays.asList("If you could switch two movie characters, what switch would lead to the most inappropriate movies?",
+            List<String> questionList = new ArrayList<String>(Arrays.asList("If you could switch two movie characters, what switch would lead to the most inappropriate movies?",
                 "If you had to change your name, what would your new name be, and why would you choose that name?",
                 "Say one thing you learn on your own.",
                 "What “old person” things do you do?",
@@ -48,7 +49,7 @@ public class QuestionServiceApplication {
                 "What is your favourite Disney character?",
                 "What is your favourite housework?"));
 
-            for(String question:questionlist) {
+            for(String question : questionList) {
                 Question q1 = Question.builder()
                         .questionBody(question)
                         .build();
