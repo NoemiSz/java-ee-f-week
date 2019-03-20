@@ -34,7 +34,6 @@ public class AnswerController {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-
     public class Answer{
         private String answer;
         private String port;

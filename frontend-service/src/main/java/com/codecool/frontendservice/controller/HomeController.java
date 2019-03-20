@@ -1,5 +1,6 @@
 package com.codecool.frontendservice.controller;
 
+import com.codecool.frontendservice.service.AnswerService;
 import com.codecool.frontendservice.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,9 @@ public class HomeController {
     @Autowired
     private QuestionService questionService;
 
+    @Autowired
+    private AnswerService answerService;
+
     @GetMapping("/")
     public String index(){
         return "index";
@@ -20,6 +24,7 @@ public class HomeController {
     @GetMapping("/login")
     public String mainSite(Model model){
         model.addAttribute("question", questionService.addDailyQuestion());
+        answerService.addActualAnswer();
         return "mainSite";
     }
 
