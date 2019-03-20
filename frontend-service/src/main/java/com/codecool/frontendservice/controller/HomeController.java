@@ -16,12 +16,12 @@ public class HomeController {
     @Autowired
     private AnswerService answerService;
 
-    @GetMapping("/")
-    public String index(){
-        return "index";
-    }
+//    @GetMapping("/")
+//    public String index(){
+//        return "index";
+//    }
 
-    @GetMapping("/login")
+    @GetMapping("/")
     public String mainSite(Model model){
         model.addAttribute("question", questionService.addDailyQuestion());
         answerService.addActualAnswer();
