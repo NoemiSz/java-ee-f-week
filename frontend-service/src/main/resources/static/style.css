@@ -101,6 +101,8 @@ header nav a:hover {
 
 .button {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .question {
@@ -113,12 +115,12 @@ header nav a:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-div .helper {
+div .button {
     width: 100%;
     text-align: center;
 }
 
-div .helper a {
+div .question-btn {
     padding: 0 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -129,11 +131,27 @@ div .helper a {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-div .helper a:hover {
-    color: white;
+div .question-btn:hover {
+    background: #b86b77;
+}
+
+div .helper-btn {
+    padding: 0 15px;
+    text-transform: uppercase;
     text-decoration: none;
-    background-color: #b86b77;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: 7px 0;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-hidden {
+    visibility: hidden;
+}
+
+div .helper-btn:hover {
+    background: #b86b77;
 }
 
 footer {

@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row">
                     <div class="button">
-                        <button class="question-btn" onclick="question()">Button</button>
+                        <button class="question-btn" onclick="question()">Daily Question</button>
                     </div>
                     <p id="basic-question" class="question" th:text="question">The daily question</p>
                 </div>
@@ -45,8 +45,8 @@
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="helper">
-                        <button class="helper-btn" onclick="answer()">Helper</button>
+                    <div class="button">
+                        <button id="helper-button" class="helper-btn btn-hidden" onclick="answer()">Helper</button>
                     </div>
                 </div>
             </div>
