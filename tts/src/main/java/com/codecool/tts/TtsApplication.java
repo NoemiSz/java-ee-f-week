@@ -1,6 +1,9 @@
 package com.codecool.tts;
 
 import com.codecool.tts.model.MyVoice;
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -14,4 +17,9 @@ public class TtsApplication {
 
     @Bean
     MyVoice myvoice() { return new MyVoice();}
+
+    @Bean
+    VoiceManager voiceManager(){ return VoiceManager.getInstance();}
+
+
 }
