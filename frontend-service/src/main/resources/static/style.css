@@ -99,6 +99,10 @@ header nav a:hover {
     margin: 5px 0;
 }
 
+.button {
+    width: 100%;
+}
+
 .question {
     color: black;
     width: 100%;
