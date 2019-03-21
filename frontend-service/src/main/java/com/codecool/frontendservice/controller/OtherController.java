@@ -1,5 +1,6 @@
 package com.codecool.frontendservice.controller;
 
+import com.codecool.frontendservice.service.AnswerService;
 import com.codecool.frontendservice.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -14,11 +15,20 @@ public class OtherController {
 
     @Autowired
     private QuestionService questionService;
+    @Autowired
+    private AnswerService answerService;
 
     @GetMapping("/question")
     public String dailyQuestion(){
         String q = questionService.addDailyQuestion();
         return q;
     }
+
+    @GetMapping("/answer")
+    public String answer(){
+        String ans= answerService.addActualAnswer();
+        return ans;
+    }
+
 
 }

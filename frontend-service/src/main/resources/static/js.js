@@ -6,3 +6,12 @@ function question(){
         }).then(data =>
         btn.innerHTML = data).then(data => fetch("http://localhost:8084/say/" + data))
 }
+
+function answer(){
+
+    fetch("/answer")
+        .then(res => {
+            return res.text();
+        })
+        .then(data => fetch("http://localhost:8084/say/" + data))
+}
