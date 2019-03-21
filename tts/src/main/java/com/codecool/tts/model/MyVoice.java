@@ -14,7 +14,7 @@ public class MyVoice {
     public void saySomething(String toSay){
         this.voice = voiceManager.getVoice("kevin16");
         voice.allocate();
-        voice.setRate(190);
+        voice.setRate(130);
         voice.setPitch(150);
         voice.setVolume(3);
         voice.speak(toSay);
