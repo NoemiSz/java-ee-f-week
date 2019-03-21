@@ -11,22 +11,42 @@
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <h1 class="col-md-4">F-Week</h1>
-                    <nav class="col-md-8">
-                        <a href="/login">Login</a>
-                    </nav>
+                    <h1 class="col-md-12">F-Week</h1>
                 </div>
             </div>
         </div>
     </header>
+    <div class="container-fluid main-image-two d-none d-sm-block">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="button">
+                        <button class="question-btn" onclick="question()">Button</button>
+                    </div>
+                    <p id="basic-question" class="question" th:text="question">The daily question</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid main-image d-none d-sm-block">
         <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="box">
+                        <div class="box-main">
                             <img src="angel.png" class="img-fluid" alt="Responsive image">
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-image-two d-none d-sm-block">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="helper">
+                        <a href="">Helper</a>
                     </div>
                 </div>
             </div>
@@ -41,5 +61,6 @@
             </div>
         </div>
     </footer>
+    <script src="js.js"></script>
 </body>
 </html>
